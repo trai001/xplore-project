@@ -11,7 +11,7 @@ class SectionScreen extends React.Component{
   render(){
     return(
       <Container>
-        <Text>Section Screen</Text>
+        <Text>Section Screen </Text>
         <Button title = "Close" onPress={()  => {
           this.props.navigation.goBack();
         }} />
