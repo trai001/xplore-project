@@ -496,7 +496,8 @@ text-transform: uppercase; //transforms entire subtitle to all uppercase
 const Container = styled.View`
   flex: 1;
   background-color: #EDF6F9;
-  border-radius:12px;
+  border-top-left-radius:12px;
+  border-top-right-radius: 12px;
   `;
 
   const AnimatedContainer = Animated.createAnimatedComponent(Container);
