@@ -148,14 +148,21 @@ class HomeScreen extends React.Component {
         showsHorizontalScrollIndicator={false}
         >
         {popular.map((popular,index)=>(
+           <TouchableOpacity key= {index}
+           onPress={() =>{
+             this.props.navigation.push("Courses",{
+               courses: items
+             } );
+           }}
+           >
           <Popular 
           title={popular.title}
           image={popular.image}
           subtitle={popular.subtitle}
           caption= {popular.caption}
           logo={popular.logo}
-        
-          />
+        />
+           </TouchableOpacity>
         ))}
 
 </ScrollView>
@@ -166,6 +173,13 @@ class HomeScreen extends React.Component {
         showsHorizontalScrollIndicator={false}
         >
         {saved.map((saved,index)=>(
+           <TouchableOpacity key= {index}
+           onPress={() =>{
+             this.props.navigation.push("Projects",{
+               projects: items
+             } );
+           }}
+           >
           <Saved
           title={saved.title}
           image={saved.image}
@@ -174,6 +188,7 @@ class HomeScreen extends React.Component {
           logo={saved.logo}
         
           />
+            </TouchableOpacity>
         ))}
          </ScrollView>
         </ScrollView>
