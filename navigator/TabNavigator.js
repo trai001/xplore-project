@@ -9,6 +9,10 @@ const HomeStack= createStackNavigator({
   Home: HomeScreen,
   Section: SectionScreen,
 });
+
+HomeStack.navigationOptions={
+  tabBarLabel : "Home"
+};
       
 const CoursesStack = createStackNavigator({
   Courses: SectionScreen
