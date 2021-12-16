@@ -301,6 +301,10 @@ function mapDispatchToProps(dispatch) {
 
 
 class HomeScreen extends React.Component {
+  static navigationOptions = {
+    header: null
+  };
+
   state={
     scale:new Animated.Value(1)
     //Opacity: new Animated.Value(1)
@@ -383,7 +387,7 @@ class HomeScreen extends React.Component {
             this.props.navigation.push("Section");
           }}
           >
-            
+
         <Items 
         title= {items.title}
         image={items.image}
