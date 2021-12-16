@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-firebase/app": "^14.0.0",
+    "@react-navigation/bottom-tabs": "^6.0.9",
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
     "button": "^1.1.1",
@@ -27,7 +28,9 @@
     "react-native-web": "0.17.1",
     "react-navigation": "^4.4.4",
     "react-navigation-stack": "^2.10.4",
+    "react-navigation-tabs": "^2.11.1",
     "react-redux": "^7.2.6",
+    "react-tabs": "^3.2.3",
     "redux": "^4.1.2",
     "styled-components": "^5.3.3"
   },
