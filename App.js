@@ -48,6 +48,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 import * as React from 'react';
 import { createStore } from "redux";
 import { Provider } from "react-redux";
@@ -58,6 +68,21 @@ import Login from './screens/Login';
 import Forgot from './screens/Forgot';
 import HomeScreen from './screens/HomeScreen';
 import AppNavigator from './navigator/AppNavigator';
+
+
+
+
+
+// const Stack = createNativeStackNavigator();//THIS IS ADDED 
+
+//     <NavigationContainer>
+//       <Stack.Navigator>
+//         {/* <Stack.Screen name="Get Started" component={start} /> */}
+//         <Stack.Screen name="Login" component={Login} />
+//         <Stack.Screen name="Forgot" component={Forgot} />
+//       </Stack.Navigator>
+//     </NavigationContainer>
+
 
 
 
@@ -86,7 +111,10 @@ const App=()=>(
   <Provider store={store}>
     <AppNavigator />
   </Provider>
-);
+)
+  
+
+
 
 export default App;
 
