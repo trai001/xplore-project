@@ -4,8 +4,8 @@ import { createStackNavigator } from "react-navigation-stack";
 import HomeScreen from "../screens/HomeScreen";
 import SectionScreen from "../screens/SectionScreen";
 import { Ionicons } from '@expo/vector-icons';
-import CoursesScreen from "../screens/CoursesScreen";
-import ProjectsScreen from "../screens/ProjectsScreen";
+import PopularScreen from "../screens/PopularScreen";
+import SavedScreen from "../screens/SavedScreen";
 
 const activeColor = "#4775f2";
 const inactiveColor = "#b8bece";
@@ -37,12 +37,12 @@ HomeStack.navigationOptions= ({navigation}) => {
   };
 };
       
-const CoursesStack = createStackNavigator({
-  Courses: CoursesScreen
+const PopularStack = createStackNavigator({
+  Popular: PopularScreen
 });
 
-CoursesStack.navigationOptions={
-  tabBarLabel : "Courses",
+PopularStack.navigationOptions={
+  tabBarLabel : "Popular",
   tabBarIcon: ({focused}) =>(
     <Ionicons name ="albums" size={26} color={
       focused ? activeColor : inactiveColor} 
@@ -50,12 +50,12 @@ CoursesStack.navigationOptions={
   )
 };
 
-const ProjectsStack = createStackNavigator({
-  Projects:ProjectsScreen
+const SavedStack = createStackNavigator({
+  Saved:SavedScreen
 });
 
-ProjectsStack.navigationOptions={
-  tabBarLabel : "Projects",
+SavedStack.navigationOptions={
+  tabBarLabel : "Saved",
   tabBarIcon: ({focused}) =>(
     <Ionicons name ="folder" size={26} color={
       focused ? activeColor : inactiveColor} 
@@ -65,8 +65,8 @@ ProjectsStack.navigationOptions={
 
 const TabNavigator = createBottomTabNavigator({
   HomeStack,
-  CoursesStack,
-  ProjectsStack
+  PopularStack,
+  SavedStack
 });
 
 export default TabNavigator;

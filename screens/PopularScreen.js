@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-class CoursesScreen extends React.Component{
+class PopularScreen extends React.Component{
   static navigationOptions ={
     header: null
   };
@@ -10,13 +10,13 @@ class CoursesScreen extends React.Component{
   render(){
     return(
       <Container>
-        <Text>Courses Screen</Text>
+        <Text>Popular Screen</Text>
       </Container>
     )
   }
 }
 
-export default CoursesScreen;
+export default PopularScreen;
 
 const Container = styled.View`
   flex:1;

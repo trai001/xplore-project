@@ -109,10 +109,12 @@ class HomeScreen extends React.Component {
         showsHorizontalScrollIndicator={false}
         >
           {logos.map((logo, index) => (
+            <TouchableOpacity >
         <Logo 
         key={index}
         image={logo.image}
         text={logo.text} />
+        </TouchableOpacity>
           ))}
         </ScrollView>
         <Subtitle>New Activities</Subtitle>
@@ -150,8 +152,8 @@ class HomeScreen extends React.Component {
         {popular.map((popular,index)=>(
            <TouchableOpacity key= {index}
            onPress={() =>{
-             this.props.navigation.push("Courses",{
-               courses: items
+             this.props.navigation.push("Popular",{
+               popular: items
              } );
            }}
            >
@@ -175,8 +177,8 @@ class HomeScreen extends React.Component {
         {saved.map((saved,index)=>(
            <TouchableOpacity key= {index}
            onPress={() =>{
-             this.props.navigation.push("Projects",{
-               projects: items
+             this.props.navigation.push("Saved",{
+               saved: items
              } );
            }}
            >
