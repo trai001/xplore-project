@@ -1,6 +1,6 @@
 //import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { ScrollView, SafeAreaView } from "react-native";
+import { ScrollView, SafeAreaView, Modal } from "react-native";
 import styled from "styled-components/native";
 import Logo from "../screens/Logo"; 
 import Items from "../screens/Items";
@@ -22,6 +22,7 @@ import Saved from "../components/Saved";
 import Menu from "../components/Menu";
 import { connect } from "react-redux";
 import Avatar from "../components/Avatar";
+import Login from "./Login";
 
 
 function mapStateToProps(state) {
@@ -196,6 +197,7 @@ class HomeScreen extends React.Component {
         </ScrollView>
         </SafeAreaView>
       </AnimatedContainer>
+      <Login />
       </RootView>
     );
   }

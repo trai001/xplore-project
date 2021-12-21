@@ -23,7 +23,7 @@ class Avatar extends React.Component{
   };
 
      componentDidMount() {
-        fetch("https://uifaces.co/api?limit=1&random",{
+        fetch("https://uifaces.co/api?limit=1&random/gender=female",{
            headers: new Headers ({
             "X-API-KEY": "eeaafbe81657073cd70ac6e3de1bd6"
             })
